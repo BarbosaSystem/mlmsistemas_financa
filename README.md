@@ -49,7 +49,7 @@ Configuração
 Siga as instruções abaixo para configurar o ambiente de desenvolvimento:
 
 # Clone este repositório em sua máquina local.
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/BarbosaSystem/mlmsistemas_financa.git 
 
 # Instale as dependências necessárias.
 cd nome-do-repositorio
