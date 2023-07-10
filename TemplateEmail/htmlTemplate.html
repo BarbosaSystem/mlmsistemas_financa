@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <td>
+                            <br />
+                            <div style="border-top:3px solid #22BCE5; width:300px"> </div>
+                            <br />
+                            <span style="font-family:Arial;font-size:10pt">
+                                Hello <b>{UserName}</b>,<br /><br />
+                                
+                                {Message}
+                                <br />
+                                A senha nova senha é: <b>{Password}</b>.
+                                <br />
+                                
+                                <p style="font-family: 'Courier New', Courier, monospace;">ESTA É UMA MENSAGEM AUTOMÁTICA, POR FAVOR NÃO RESPONDA.</p>
+                                
+                                <br /><br />
+                                Thanks and Regards,<br />
+                                MLMSistemas Team
+                            </span>
+                            <br />
+                            {imagem}
+                            <!-- https://www.c-sharpcorner.com/article/send-email-using-asp-net-mvc-and-web-api/ 
+                            https://steemit.com/utopian-io/@babelek/how-to-send-email-using-asp-net-core-2-0-->
+                            <!-- <img src="{imagem}" width="180px" height="50px"/> -->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
