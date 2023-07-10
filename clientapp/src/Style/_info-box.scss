@@ -1,0 +1,60 @@
+.info-box{
+    @include media-breakpoint-up(lg) {
+        @include make-col(3);
+        padding: 2px;
+    }
+    @include media-breakpoint-down(md) {
+        @include make-col(6);
+        padding: 2px;
+    }
+    @include media-breakpoint-down(sm) {
+        @include make-col(12);
+    }
+    @include media-breakpoint-down(xs) {
+        @include make-col(12);
+    }
+    display: inline-block;
+    min-height: 90px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(247, 196, 196, 0.1);
+    border-radius: 2px;
+    
+    &-icon{
+        cursor: pointer;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 2px;
+        display: block;
+        float: left;
+        height: 73px;
+        width: 50px;
+        text-align: center;
+        font-size: 45px;
+        line-height: 70px;
+        background: rgba(0,0,0,0.2);
+        margin-left: -10px;
+        margin-right: 10px;
+        margin-top: -15px;
+        .btn{
+            color: $white;
+        }
+    }
+    &-content{
+        padding: 15px 10px;
+    }
+    &-text{
+        text-transform: uppercase;
+        display: block;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &-number {
+        display: block;
+        font-weight: bold;
+        font-size: 14px
+    }
+}

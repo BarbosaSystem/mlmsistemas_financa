@@ -1,0 +1,72 @@
+.lancamento {
+    @include make-row();
+    flex-direction: row;
+
+    .lancamento-area {
+        @include make-col(12);
+        display: flex;
+
+        @include media-breakpoint-up(xs) {
+            font-size: 0.8rem;
+        }
+
+        .lancamento-area-item {
+            @include media-breakpoint-up(xs) {
+                @include make-col(3);
+
+                &:nth-child(1) {
+                    @include make-col(3);
+                }
+
+                &:nth-child(2) {
+                    @include make-col(5);
+                }
+
+                &:nth-child(3) {
+                    @include make-col(2);
+                }
+
+                &:nth-child(3) {
+                    @include make-col(2);
+                }
+            }
+        }
+    }
+}
+
+.linha-periodo {
+    @include make-row();
+
+    .linha-periodo-item {
+        @include media-breakpoint-up(xs) {
+            @include make-col(6);
+            margin: 0px 15px;
+            text-align: left;
+
+            .fas {
+                margin-right: 4px;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            @include make-col(4);
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    .linha-periodo-progress {
+        @include make-col(12);
+        margin-top: 15px;
+    }
+
+}
+
+.legenda {
+    @include make-row();
+
+    &-item {
+        @include make-col(3);
+        text-align: center;
+    }
+}

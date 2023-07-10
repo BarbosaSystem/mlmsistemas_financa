@@ -1,0 +1,62 @@
+.logout {
+    z-index: 1000000;
+    background-color: #d2d6de;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    &-area {
+        display: flex;
+        color: $white;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: -100px;
+
+        &-card {
+            border: none;
+            background-color: transparent;
+            width: 50%;
+            box-shadow: -9px 4px 31px -12px rgba(0, 0, 0, 0.75);
+            padding-top: 10px;
+            @media screen and (max-width: 442px) {
+                width: 100%;
+            }
+            &-header {
+                text-align: center;
+                color: black;
+                border: none;
+                background-color: transparent
+            }
+
+            &-body {
+                text-align: center;
+
+                &-imagem {
+                    height: 96px;
+                    width: 96px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 5px solid $white;
+                }
+
+                .input-logout {
+                    border: 1px solid #eee;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    &-password{
+                        border:none;
+                    }
+                }
+            }
+            &-footer{
+                text-align: center;
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
+
+}

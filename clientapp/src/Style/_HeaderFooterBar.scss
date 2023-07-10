@@ -1,0 +1,59 @@
+.navbar {
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    left: 0;
+    cursor: pointer;
+
+    &.topo {
+        top: 0;
+
+        .navbar-nav {
+            .nav-item {
+                color: $white;
+                .nav-text {
+                    margin: 0px !important;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    &.bottom {
+        bottom: 0;
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+
+            .nav-item {
+                color: rgba(255, 255, 255, .4);
+
+                .nav-text {
+                    margin: 0px !important;
+                    font-size: .8rem;
+                    font-weight: bold;
+                }
+
+                &.ativo {
+                    color: $white !important;
+                }
+
+                &.tituloUser {
+                    color: $white !important;
+                    margin: 0px !important;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
